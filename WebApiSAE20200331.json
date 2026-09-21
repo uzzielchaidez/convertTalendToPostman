@@ -1,0 +1,2016 @@
+{
+    "version": 6,
+    "entities": [
+        {
+            "entity": {
+                "type": "Project",
+                "id": "1c36e291-65a6-4cad-838a-5c65f9fe89e5",
+                "name": "WebAPISAE"
+            },
+            "children": [
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"CPPA AUTOESTRENE TRADICIONAL\",\n  \"vidaNombreProducto\":\"VIDA INDIVIDUAL\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/categoria"
+                        },
+                        "id": "b6d90854-9586-4d68-a9bc-dc953fc5e971",
+                        "name": "01.- Categorias",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"autoNombreCategoria\": \"AUTOMÓVILES RESIDENTES\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/marca"
+                        },
+                        "id": "0e2916f1-cd7e-4170-8229-eae11a6c782c",
+                        "name": "02.- Marcas",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "enabled": true,
+                                "name": "Access-Control-Allow-Origin",
+                                "value": "*"
+                            },
+                            {
+                                "enabled": true,
+                                "name": "Access-Control-Allow-Credentials",
+                                "value": "true"
+                            },
+                            {
+                                "enabled": true,
+                                "name": "Access-Control-Allow-Headers",
+                                "value": "origin, content-type, accept, authorization"
+                            },
+                            {
+                                "enabled": true,
+                                "name": "Access-Control-Allow-Methods",
+                                "value": "GET, POST, PUT, DELETE, OPTIONS, HEAD"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"autoNombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n  \"autoNombreMarca\":\"SUZUKI\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/submarca"
+                        },
+                        "id": "9b6a1fb9-8dba-43ad-8d08-0352bff9d0b9",
+                        "name": "03.- SubMarcas",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"nombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"nombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n  \"estado\":\"NUEVO LEÓN\",\n  \"codigoPostal\":\"64000\",\n  \"claveBanorte\":\"SKA05\",\n  \"anio\":\"2020\",\n  \"nombreUso\":\"PARTICULAR\",\n  \"nombreServicio\":\"PARTICULAR\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/cuestionario_cotizacion"
+                        },
+                        "id": "193bcb7e-bb11-4b8b-af65-8fdb4e64559f",
+                        "name": "04.- Datos complementarios",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/producto"
+                        },
+                        "id": "25e0259d-91bc-41b1-9ed3-04fd0d3aeb59",
+                        "name": "05.- Productos",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"autoNombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n  \"estado\":\"NUEVO LEÓN\",\n  \"codigoPostal\":\"64000\",\n  \"claveBanorte\":\"SKA05\",\n  \"anio\":\"2020\",\n  \"autoNombreUso\":\"PARTICULAR\",\n  \"autoNombreServicio\":\"PARTICULAR\",\n  \"respuestas\":[ \n    {\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n    {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n    {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"12 MESES\"}, \n    {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"}]\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/paquete"
+                        },
+                        "id": "ea81214c-ca9f-4d01-a8a6-b39179acb19a",
+                        "name": "06.- Paquetes",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/aseguradora"
+                        },
+                        "id": "40ac17fa-0d3b-4b83-9994-cc2a6f93eac6",
+                        "name": "07.- Aseguradoras",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"autoNombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n  \"autoNombreMarca\":\"SUZUKI\",\n  \"autoNombreSubMarcas\":\"SX4\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/vehiculo"
+                        },
+                        "id": "0b7d4a61-ad33-41db-90c9-4fc7d1d781a0",
+                        "name": "08.- Vehículos",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"estado\":\"NUEVO LEÓN\",\n  \"autoNombreMarca\":\"SUZUKI\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/agencia"
+                        },
+                        "id": "927144ce-d089-4905-960e-5064cfa76174",
+                        "name": "09.- Agencias",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"estado\":\"NUEVO LEÓN\",\n  \"autoNombreMarca\":\"SUZUKI\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/catg/agencia/export"
+                        },
+                        "id": "4082c2d7-4954-4928-831a-fe5bde9fed62",
+                        "name": "09.01.- Agencias Export",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/estado"
+                        },
+                        "id": "ce673db0-1b0f-49a0-98b7-dec9559a993c",
+                        "name": "10.- Catalogo Estados",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"estado\": \"NUEVO LEÓN\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/municipio"
+                        },
+                        "id": "da918460-d182-48ce-9113-8b0619980b3d",
+                        "name": "11.- Municipios",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"codigoPostal\": \"2070\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/qery/codigo_postal"
+                        },
+                        "id": "7d81d6aa-9eda-4e30-b9e6-a1b555dc4882",
+                        "name": "12.- Código postal",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"vidaNombreProducto\":\"VIDA INDIVIDUAL\",\n  \"vidaNombreCategoria\":\"TEMPORAL\",\n  \"propietario\":\"\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/vida/catg/cuestionario_suscripcion"
+                        },
+                        "id": "e879fe83-62ab-4d8c-b143-4a9b8f58085f",
+                        "name": "13.- Cuestionario suscripción",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\":\"7398657\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/chck/vigencia"
+                        },
+                        "id": "3e8a929b-e3ba-4e33-a5a3-9df80cd39ccd",
+                        "name": "14.- Vigencia",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"anio\":\"2019\",\n  \"numSerie\":\"1HGCM66854A096419\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/chck/validar_serie"
+                        },
+                        "id": "f77aeda1-335f-417e-84b3-87f3f1b5b9b2",
+                        "name": "15.- Validar serie",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"cotizacionAuto\":{\"nombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n \"nombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n \"estado\":\"NUEVO LEÓN\",\n \"municipio\":\"MONTERREY\",\n \"codigoPostal\":\"64000\",\n \"claveBanorte\":\"SKA05\",\n \"anio\":\"2020\",\n \"nombreUso\":\"PARTICULAR\",\n \"nombreServicio\":\"PARTICULAR\",\n  \"respuestas\":[ \n    {\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n    {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n    {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"24 MESES\"}, \n    {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"},\n    {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"24 MESES\"}]\n},\n\"cotizacionVida\":{\n  \"nombreProducto\":\"VIDA INDIVIDUAL\",\n  \"nombreCategoria\":\"TEMPORAL\",\n  \"moneda\":\"PESOS\",\n  \"asegurado\":{\n    \"sic\":\"51420676\",\n    \"rfc\":\"DURR800505\",\n    \"apellidoPaterno\":\"DUARTE\",\n    \"apellidoMaterno\":\"RODRIGUEZ\",\n    \"nombre\":\"RAMON\",\n    \"fechaNacimiento\":\"1980-05-05 00:00:00\",\n    \"estatura\":1.71,\n    \"peso\":71,\n    \"sexo\":\"MASCULINO\"\n     },\n\"respuestas\":[ \n  \t{\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n    {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n    {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"12 MESES\"}, \n    {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"},\n    {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"12 MESES\"} \n\t]\n}\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/cotizar"
+                        },
+                        "id": "b4ae415f-8666-44d6-a3a9-d06b3d2c472f",
+                        "name": "16.- Cotizar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\": \"9023\",\n  \"clienteEstrategico\": \"sae\",\n  \"recalcularAuto\": {\"nombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n                    \"nombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n                   \"estado\":\"NUEVO LEÓN\",\n                   \"codigoPostal\":\"64000\",\n                   \"claveBanorte\":\"SKA05\",\n                   \"anio\":\"2020\",\n                   \"nombreUso\":\"PARTICULAR\",\n                   \"nombreServicio\":\"PARTICULAR\",\n                   \"respuestas\":[ \n                      {\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n                      {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n                      {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"24 MESES\"}, \n                      {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"},\n                      {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"24 MESES\"}\n                  ],\n                  \"nombrePaquete\":\"AMPLIO\",\n                  \"items\":[\n                      {\n                      \"indice\": 10886,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"DAÑOS MATERIALES\",\n                      \"montoSumaAsegurada\": 150000,\n                      \"montoDeducible\": 5\n                      },\n                      {\n                      \"indice\": 10887,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ROTURA DE CRISTALES\",\n                      \"montoSumaAsegurada\": 75000,\n                      \"montoDeducible\": 20\n                      },\n                      {\n                      \"indice\": 10888,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ROBO TOTAL\",\n                      \"montoSumaAsegurada\": 150000,\n                      \"montoDeducible\": 10\n                      },\n                      {\n                      \"indice\": 10889,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"RESPONSABILIDAD CIVIL DAÑOS A TERCEROS\",\n                      \"montoSumaAsegurada\": 4000000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10890,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"GASTOS MÉDICOS OCUPANTES\",\n                      \"montoSumaAsegurada\": 250000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10891,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"PROTECCIÓN EN ESTADOS UNIDOS\",\n                      \"montoSumaAsegurada\": 100000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10892,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ASISTENCIA JURÍDICA\",\n                      \"montoSumaAsegurada\": 1000000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10893,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ASISTENCIA VEHICULAR\",\n                      \"montoSumaAsegurada\": 750000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10896,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"MUERTE DEL CONDUCTOR X ACCID. AUTOM.\",\n                      \"montoSumaAsegurada\": 100000,\n                      \"montoDeducible\": 0\n                      },  \n                      {\n                      \"indice\": 10894,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"REPARACIÓN EN AGENCIAS\",\n                      \"montoSumaAsegurada\": 1,\n                      \"montoDeducible\": 0\n                      },    \n                      {\n                      \"indice\": 10895,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"AUTO SUSTITUTO POR ROBO TOTAL\",\n                      \"montoSumaAsegurada\": 12000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10897,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"AUTO SUSTITUTO POR PÉRDIDA TOTAL DM\",\n                      \"montoSumaAsegurada\": 6000,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10898,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"BOLSO PROTEGIDO\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 10\n                      },\n                      {\n                      \"indice\": 10899,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ASISTENCIA CHOFER\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10900,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ATENCIÓN CONTINUA\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10901,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"AUTO AGENCIA CONTINUA\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10902,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"ROBO PARCIAL\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                      \"indice\": 10903,\n                      \"habilitada\": true,\n                      \"nombreTipoCobertura\": \"LLANTA SEGURA\",\n                      \"montoSumaAsegurada\": 0,\n                      \"montoDeducible\": 0\n                      },\n                      {\n                       \"indice\": 10904,\n                        \"habilitada\": true,\n                        \"nombreTipoCobertura\": \"VALOR GARANTIZADO\",\n                        \"montoSumaAsegurada\": 10000,\n                        \"montoDeducible\": 0\n                        } \n                  ],\n                  \"nombreVigencia\": \"24 MESES\",\n                  \"nombreFormaPago\": \"PAGO ÚNICO\"\n                  },\n  \"recalcularVida\": {\n                    \"nombreProducto\":\"VIDA INDIVIDUAL\",\n                    \"nombreCategoria\":\"TEMPORAL\",\n                    \"moneda\":\"PESOS\",\n                    \"nombreFormaPago\": \"PAGO ÚNICO\",\n                    \"asegurado\":{\n                      \"sic\":\"51420676\",\n                      \"rfc\":\"DURR800505\",\n                      \"apellidoPaterno\":\"DUARTE\",\n                      \"apellidoMaterno\":\"RODRIGUEZ\",\n                      \"nombre\":\"RICARDO\",\n                      \"fechaNacimiento\":\"1980-05-05 00:00:00\",\n                      \"estatura\":1.71,\n                      \"peso\":71,\n                      \"sexo\":\"MASCULINO\"\n                       },\n                    \"respuestas\":[ \n                                  {\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n                                  {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n                                  {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"24 MESES\"}, \n                                  {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"},\n                                  {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"24 MESES\"}],\n                    \"items\":[{\n                              \"indice\": 4708,\n                              \"habilitada\": true,\n                              \"nombreTipoCobertura\": \"FALLECIMIENTO\",\n                              \"montoSumaAsegurada\": 120000\n                              },\n                              {\n                              \"indice\": 4709,\n                              \"habilitada\": true,\n                              \"nombreTipoCobertura\": \"PAGO DE SUMA ASEGURADA POR INVALIDEZ TOTAL Y PERMANENTE\",\n                              \"montoSumaAsegurada\": 120000 }]\n                  }\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/recalcular"
+                        },
+                        "id": "37a01068-552c-4669-adf8-07cf2aab9b03",
+                        "name": "17.- Recalcular",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"polizasAuto\": {\n\"nombreProducto\":\"AUTOESTRENE TRADICIONAL\",\n  \"nombreCategoria\":\"AUTOMÓVILES RESIDENTES\",\n \"estado\":\"NUEVO LEÓN\",\n \"codigoPostal\":\"64000\",\n \"claveBanorte\":\"SKA05\",\n \"anio\":\"2020\",\n \"nombreUso\":\"PARTICULAR\",\n \"nombreServicio\":\"PARTICULAR\",\n \"respuestas\":[ \n  \t{\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n    {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n    {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"24 MESES\"}, \n    {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"} ,\n    {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"24 MESES\"}\n],\n\"nombrePaquete\":\"AMPLIO\",\n\"items\":[\n    {\n    \"indice\": 10886,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"DAÑOS MATERIALES\",\n    \"montoSumaAsegurada\": 150000,\n    \"montoDeducible\": 5\n    },\n    {\n    \"indice\": 10887,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ROTURA DE CRISTALES\",\n    \"montoSumaAsegurada\": 75000,\n    \"montoDeducible\": 20\n    },\n    {\n    \"indice\": 10888,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ROBO TOTAL\",\n    \"montoSumaAsegurada\": 150000,\n    \"montoDeducible\": 10\n    },\n    {\n    \"indice\": 10889,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"RESPONSABILIDAD CIVIL DAÑOS A TERCEROS\",\n    \"montoSumaAsegurada\": 4000000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10890,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"GASTOS MÉDICOS OCUPANTES\",\n    \"montoSumaAsegurada\": 250000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10891,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"PROTECCIÓN EN ESTADOS UNIDOS\",\n    \"montoSumaAsegurada\": 100000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10892,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ASISTENCIA JURÍDICA\",\n    \"montoSumaAsegurada\": 1000000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10893,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ASISTENCIA VEHICULAR\",\n    \"montoSumaAsegurada\": 750000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10896,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"MUERTE DEL CONDUCTOR X ACCID. AUTOM.\",\n    \"montoSumaAsegurada\": 100000,\n    \"montoDeducible\": 0\n    },  \n    {\n    \"indice\": 10894,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"REPARACIÓN EN AGENCIAS\",\n    \"montoSumaAsegurada\": 1,\n    \"montoDeducible\": 0\n    },    \n    {\n    \"indice\": 10895,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"AUTO SUSTITUTO POR ROBO TOTAL\",\n    \"montoSumaAsegurada\": 12000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10897,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"AUTO SUSTITUTO POR PÉRDIDA TOTAL DM\",\n    \"montoSumaAsegurada\": 6000,\n    \"montoDeducible\": 0\n    },\n   \t{\n    \"indice\": 10898,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"BOLSO PROTEGIDO\",\n    \"montoSumaAsegurada\": 10000,\n    \"montoDeducible\": 10\n    },\n    {\n    \"indice\": 10899,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ASISTENCIA CHOFER\",\n    \"montoSumaAsegurada\": 1,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10900,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ATENCIÓN CONTINUA\",\n    \"montoSumaAsegurada\": 1,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10901,\n    \"habilitada\": false,\n    \"nombreTipoCobertura\": \"AUTO AGENCIA CONTINUA\",\n    \"montoSumaAsegurada\": 10000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10902,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"ROBO PARCIAL\",\n    \"montoSumaAsegurada\": 100000,\n    \"montoDeducible\": 0\n    },\n    {\n    \"indice\": 10903,\n    \"habilitada\": true,\n    \"nombreTipoCobertura\": \"LLANTA SEGURA\",\n    \"montoSumaAsegurada\": 100000,\n    \"montoDeducible\": 0\n    },\n  \t{\n     \"indice\": 10904,\n      \"habilitada\": false,\n      \"nombreTipoCobertura\": \"VALOR GARANTIZADO\",\n      \"montoSumaAsegurada\": 10000,\n      \"montoDeducible\": 0\n      } \n  \n],\n\"nombreVigencia\": \"24 MESES\",\n\"nombreFormaPago\": \"PAGO ÚNICO\",\n\"resumenCotizacion\":{\n    \"nombreFormaPago\": \"PAGO ÚNICO\",\n    \"primaNeta\": 16053.38,\n    \"montoDerecho\": 650,\n    \"montoRecargo\": 0.00,\n    \"iva\": 2672.54,\n    \"primaTotal\": 19375.92\n  },\n\t\"prospecto\":\n\t{\n\t\t\"tipoPersona\":\"FÍSICA\", \n\t\t\"apellidoPaterno\":\"PEREZ\", \n\t\t\"apellidoMaterno\":\"VELEZ\", \n\t\t\"nombre\":\"JOSE\", \n\t\t\"formasContacto\":\n\t\t\t[\t{\"nombre\":\"telefono\", \"valor\":\"8142861591\"}, \n\t\t\t\t{\"nombre\":\"email\", \"valor\":\"PRUEBA@GMAIL.COM\"}\n\t\t\t]\n\t},\n\t \"contratante\":{\n    \"tipoPersona\":\"FÍSICA\",\n    \"rfc\":\"PEVA740101\",\n    \"fechaNacimiento\":\"1974-01-01 00:00:00\",\n    \"nombre\":\"ANA\",\n    \"apellidoPaterno\":\"PEREZ\",\n    \"apellidoMaterno\":\"VELEZ\",\n    \"estadoCivil\":\"SOLTERO\",\n    \"sexo\":\"FEMENINO\",\n    \"domicilio\":{\n\t\t\"calle\":\"AV PADRE MIER\",\n\t\t\"numero\":\"123\",\n\t\t\"codigoPostal\":\"64000\",\n\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\"municipio\":\"MONTERREY\",\n\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t},\n   \"sic\":12345678,\n    \"formasContacto\":[\n\t\t{\"nombre\":\"telefono\",\"valor\":\"81526379\"},\n\t\t{\"nombre\":\"email\",\"valor\":\"prueba@gmail.com\"}\n\t\t]\n\t},\n \"asegurado\":{\n    \"tipoPersona\":\"FÍSICA\",\n    \"rfc\":\"DOII801013\",\n    \"fechaNacimiento\":\"1980-10-13 00:00:00\",\n    \"nombre\":\"IGNACIO\",\n    \"apellidoPaterno\":\"DOMINGUEZ\",\n    \"apellidoMaterno\":\"ITURBE\",\n    \"estadoCivil\":\"CASADO\",\n    \"sexo\":\"MASCULINO\",\n    \"ocupacion\":\"OCUPADO\",\n    \"domicilio\":{\n\t\t\"calle\":\"AV PADRE MIER\",\n\t\t\"numero\":\"123\",\n\t\t\"codigoPostal\":\"64000\",\n\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\"municipio\":\"MONTERREY\",\n\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t},\n   \"sic\":22341124,\n    \"formasContacto\":[\n\t\t{\"nombre\":\"telefono\",\"valor\":\"81526379\"},\n\t\t{\"nombre\":\"email\",\"valor\":\"prueba2@gmail.com\"}\n\t\t]\n\t}\n},\n  \"polizasVida\": {\n  \"nombreProducto\":\"VIDA INDIVIDUAL\",\n  \"nombreCategoria\":\"TEMPORAL\",\n  \"moneda\":\"PESOS\",\n  \"asegurado\":{\n    \"sic\":\"12345678\",\n    \"rfc\":\"HERR711011\",\n    \"apellidoPaterno\":\"HERNANDEZ\",\n    \"apellidoMaterno\":\"ROSA\",\n    \"nombre\":\"RICARDO\",\n    \"fechaNacimiento\":\"1971-10-11 00:00:00\",\n    \"estatura\":1.86,\n    \"peso\":85,\n    \"sexo\":\"FEMENINO\",\n    \"lugarNacimiento\":\"NUEVO LEÓN, MÉXICO\",\n    \"estadoCivil\":\"CASADO\",\n    \"ocupacion\":\"OCUPADO\",\n    \"domicilio\":{\n\t\t\"calle\":\"AV PADRE MIER\",\n\t\t\"numero\":\"123\",\n        \"numeroInt\":\"H2O\",\n\t\t\"codigoPostal\":\"64000\",\n\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\"municipio\":\"MONTERREY\",\n\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t},\n    \"formasContacto\":[\n\t\t{\"nombre\":\"telefono\",\"valor\":\"81526379\"},\n\t\t{\"nombre\":\"email\",\"valor\":\"prueba@gmail.com\"}\n\t\t]\n     },\n\"respuestas\":[ \n  \t{\"indice\": 0, \"enunciado\": \"PORCENTAJE DE CRÉDITO (%)\",\"valor\":\"80\"},\n    {\"indice\": 1, \"enunciado\": \"VALOR FACTURA\",\"valor\":\"150000\"},\n    {\"indice\": 2, \"enunciado\": \"PLAZO SEGURO\",\"valor\":\"24 MESES\"}, \n    {\"indice\": 3, \"enunciado\": \"TIPO VALOR\",\"valor\":\"6\"},\n    {\"indice\": 4, \"enunciado\": \"PLAZO DEL CRÉDITO\",\"valor\":\"24 MESES\"} \n\t],\n\t\"nombrePaquete\":\"TEMPORAL\",\n\t\"items\":[\n\t\t{\n\t\t\"indice\": 4708,\n\t\t\"habilitada\": true,\n\t\t\"nombreTipoCobertura\": \"FALLECIMIENTO\",\n\t\t\"montoSumaAsegurada\": 120000\n\t\t},\n\t\t{\"indice\": 4709,\n\t\t\"habilitada\": true,\n\t\t\"nombreTipoCobertura\": \"PAGO DE SUMA ASEGURADA POR INVALIDEZ TOTAL Y PERMANENTE\",\n\t\t\"montoSumaAsegurada\": 120000\n\t\t}\n\t],\t\n    \"nombreVigencia\": \"24 MESES\",\n\t\"nombreFormaPago\": \"PAGO ÚNICO\",\n\t\"resumenCotizacion\":{\n        \"nombreFormaPago\": \"PAGO ÚNICO\",\n        \"primaNeta\": 1173.60,\n        \"montoDerecho\": 350,\n        \"montoRecargo\": 0.00,\n        \"iva\": 0.00,\n        \"primaTotal\": 1523.600\n\t\t},\n\t\"prospecto\":{\n\t\t\"tipoPersona\":\"FÍSICA\", \n\t\t\"apellidoPaterno\":\"HERNANDEZ\",\n    \t\"apellidoMaterno\":\"DE LA ROSA\",\n    \t\"nombre\":\"RICARDO\",\n\t\t\"formasContacto\":\n\t\t\t[\t{\"nombre\":\"telefono\", \"valor\":\"8142861591\"}, \n\t\t\t\t{\"nombre\":\"email\", \"valor\":\"PRUEBA@GMAIL.COM\"}\n\t\t\t]\n\t}\t,\n  \"numCotizacionAuto\":\"\",\n  \"contratante\":{\n    \"sic\":\"51420676\",\n    \"tipoPersona\":\"FÍSICA\",\n    \"rfc\":\"PEVA740101\",\n    \"apellidoPaterno\":\"HERNANDEZ\",\n    \"apellidoMaterno\":\"DE LA ROSA\",\n    \"nombre\":\"RICARDO\",\n    \"domicilio\":{\n\t\t\"calle\":\"AV PADRE MIER\",\n\t\t\"numero\":\"123\",\n\t\t\"codigoPostal\":\"64000\",\n\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\"municipio\":\"MONTERREY\",\n\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t},\n    \"formasContacto\":[\n\t\t{\"nombre\":\"telefono\",\"valor\":\"81526379\"},\n\t\t{\"nombre\":\"email\",\"valor\":\"prueba@gmail.com\"}\n\t\t]\n\t}\n}\n\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/guardar"
+                        },
+                        "id": "f38b1680-3c2f-4fad-8e28-9aeb56b6dc7e",
+                        "name": "18.- Guardar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n    \"usuarioCliente\": \"9023\",\n    \"clienteEstrategico\": \"sae\",\n    \"autoNumCotizacion\": \"7398923\",\n    \"nombreBeneficiario\": \"BENEFICIARIO DE PRUEBA\",\n    \"nombreServicio\": \"PARTICULAR\",\n    \"vehiculoEmision\": {\n        \"numPlaca\": \"AAA1234\",\n        \"numSerie\": \"1B7HF13Y7VJ609046\",\n        \"numMotor\": \"1B7HF13Y7V\",\n        \"nciRepuve\": \"1B7HF13Y7V\",\n        \"transmision\": \"STD\"\n    },\n    \"contratante\": {\n        \"tipoPersona\": \"FÍSICA\",\n        \"rfc\": \"AOMP800101AS2\",\n        \"fechaNacimiento\": \"1980-01-01 00:00:00\",\n        \"nombre\": \"PEDRO\",\n        \"apellidoPaterno\": \"ACOSTA\",\n        \"apellidoMaterno\": \"MONTESINOS\",\n        \"estadoCivil\": \"SOLTERO\",\n        \"sexo\": \"MASCULINO\",\n        \"domicilio\": {\n            \"calle\": \"MORELOS\",\n            \"numero\": \"100\",\n            \"codigoPostal\": \"64000\",\n            \"estado\": \"NUEVO LEÓN\",\n            \"municipio\": \"MONTERREY\",\n            \"colonia\": \"MONTERREY CENTRO\"\n        },\n        \"sic\": 51832222,\n        \"formasContacto\": [\n            {\n                \"nombre\": \"telefono\",\n                \"valor\": \"81326379\"\n            },\n            {\n                \"nombre\": \"email\",\n                \"valor\": \"pedro@gmail.com\"\n            }\n        ]\n    },\n    \"asegurado\": {\n        \"tipoPersona\": \"FÍSICA\",\n        \"rfc\": \"AOMP800101AS2\",\n        \"fechaNacimiento\": \"1980-01-01 00:00:00\",\n        \"lugarNacimiento\":\"MONTERREY\",\n        \"nombre\": \"PEDRO\",\n        \"apellidoPaterno\": \"ACOSTA\",\n        \"apellidoMaterno\": \"MONTESINOS\",\n        \"estadoCivil\": \"SOLTERO\",\n        \"sexo\": \"MASCULINO\",\n        \"domicilio\": {\n            \"calle\": \"MORELOS\",\n            \"numero\": \"100\",\n            \"numeroInt\": \"2\",\n            \"codigoPostal\": \"64000\",\n            \"estado\": \"NUEVO LEÓN\",\n            \"municipio\": \"MONTERREY\",\n            \"colonia\": \"MONTERREY CENTRO\"\n        },\n        \"sic\": 51832222,\n        \"formasContacto\": [\n            {\n                \"nombre\": \"telefono\",\n                \"valor\": \"81326379\"\n            },\n            {\n                \"nombre\": \"email\",\n                \"valor\": \"pedro@gmail.com\"\n            }\n        ]\n    },\n    \"conductores\": [\n        {\n            \"nombre\": \"PEDRO\",\n            \"apellidoPaterno\": \"ACOSTA\",\n            \"apellidoMaterno\": \"MONTESINOS\",\n            \"sexo\": \"MASCULINO\",\n            \"numeroLicencia\": 654321\n        }\n    ],\n    \"emision\": {\n        \"numEmpleadoPromociona\": \"0034081\",\n        \"sucursal\": \"00049\",\n        \"aseguradora\": \"\",\n        \"agencia\": \"SUZUKI GALERIA\",\n        \"fechaFirmaPagare\": \"2020-03-13 00:00:00\"\n    },\n    \"conductoCobro\": {\n        \"conducto\": \"EFECTIVO\"\n    },\n  \"beneficiarios\":[\n\t\t{\"tipoPersona\":\"MORAL\",\n\t\t\"razonSocial\":\"SEGUROS BANORTE SA DE CV\",\n\t\t\"rfc\":\"ABC990909ABC\",\n\t\t\"porcentaje\":50,\n\t\t\"parentesco\":\"SIN PARENTESCO\",\n\t\t\"domicilio\":{\n\t\t\t\"calle\":\"HIDALGO\",\n\t\t\t\"numero\":\"250\",\n\t\t\t\"codigoPostal\":\"64000\",\n\t\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\t\"municipio\":\"MONTERREY\",\n\t\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t\t},\n      \"nivelPrioridad\":1\n\t\t},\n      \t\t{\"tipoPersona\":\"MORAL\",\n\t\t\"razonSocial\":\"BANORTE MEXICANOS FUERTES\",\n\t\t\"rfc\":\"ABC990909ABC\",\n\t\t\"porcentaje\":50,\n\t\t\"parentesco\":\"SIN PARENTESCO\",\n\t\t\"domicilio\":{\n\t\t\t\"calle\":\"PADRE MIER\",\n\t\t\t\"numero\":\"247\",\n\t\t\t\"codigoPostal\":\"64000\",\n\t\t\t\"estado\":\"NUEVO LEÓN\",\n\t\t\t\"municipio\":\"MONTERREY\",\n\t\t\t\"colonia\":\"MONTERREY CENTRO\"\n\t\t\t},\n      \"nivelPrioridad\":1\n\t\t}\n\t]\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/preemitir"
+                        },
+                        "id": "97093af1-ba98-4312-9ccb-b0aad843daa4",
+                        "name": "19.- PreEmitir",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\": \"7398657\",\n  \"nombreDocumento\": \"Solicitud Vida,Solicitud Auto\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/prnt/imprimir_por_documento"
+                        },
+                        "id": "6bb58b9a-7688-4c70-a637-8b4ee484637b",
+                        "name": "20.- Imprimir por Documento",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\": \"7398657\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/prnt/listar_reporte"
+                        },
+                        "id": "037ff4f5-4165-4660-ab5c-05bb984709d3",
+                        "name": "21.- Lista Reportes",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                            "name": "GET"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text"
+                        },
+                        "uri": {
+                            "scheme": {
+                                "secure": true,
+                                "name": "https",
+                                "version": "V11"
+                            }
+                        },
+                        "id": "e1051923-e115-48d5-8c48-40193f6e7637",
+                        "name": "22.- FindUsuarioPorUsername",
+                        "headers": []
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreProducto\":\"VIDA INDIVIDUAL\",\n  \"autoNombreCategoria\":\"TEMPORAL\",\n  \"respuestas\":[ \n   \t{\"indice\": 1,\"enunciado\": \"¿ENFERMEDADES DEL CORAZÓN?\",\"valor\": \"0\"},\n    {\"indice\": 2,\"enunciado\": \"¿TUMORES?\",\"valor\": \"0\"},\n    {\"indice\": 3,\"enunciado\": \"¿SIDA?\",\"valor\": \"0\"},\n    {\"indice\": 4,\"enunciado\": \"¿DIABETES, PRESIÓN ALTA O BAJA, ENFERMEDADES DE LOS RIÑONES, DE LOS PULMONES O ENFERMEDADES SEXUALES TRANSMISIBLES?\",\"valor\": \"0\"},\n    {\"indice\": 5,\"enunciado\": \"¿TIENE PENDIENTE ALGUNA OPERACIÓN QUIRÚRGICA?\",\"valor\": \"0\"},\n    {\"indice\": 6,\"enunciado\": \"¿ES USTED UNA PERSONA POLÍTICAMENTE EXPUESTA?\",\"valor\": \"0\"}  ]\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/vida/chck/presuscribir"
+                        },
+                        "id": "2a4a8efd-c9bb-446f-ac80-08038d68f978",
+                        "name": "23.- Presuscripción",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"numCotizacionAuto\":7398923,\n  \"respuestas\":[ \n   \t{\"indice\": 1,\"enunciado\": \"¿ENFERMEDADES DEL CORAZÓN?\",\"valor\": \"0\"},\n    {\"indice\": 2,\"enunciado\": \"¿TUMORES?\",\"valor\": \"0\"},\n    {\"indice\": 3,\"enunciado\": \"¿SIDA?\",\"valor\": \"0\"},\n    {\"indice\": 4,\"enunciado\": \"¿DIABETES, PRESIÓN ALTA O BAJA, ENFERMEDADES DE LOS RIÑONES, DE LOS PULMONES O ENFERMEDADES SEXUALES TRANSMISIBLES?\",\"valor\": \"0\"},\n    {\"indice\": 5,\"enunciado\": \"¿TIENE PENDIENTE ALGUNA OPERACIÓN QUIRÚRGICA?\",\"valor\": \"0\"},\n    {\"indice\": 6,\"enunciado\": \"¿ES USTED UNA PERSONA POLÍTICAMENTE EXPUESTA?\",\"valor\": \"0\"}  ]\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/vida/func/suscribir"
+                        },
+                        "id": "d6768ef1-d1de-4793-8dc7-2a96ee373361",
+                        "name": "24.- Suscripcion",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{ \n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"fechaCotizacionDesde\":\"2020-03-01 00:00:00\",\n  \"fechaCotizacionHasta\":\"2020-03-15 00:00:00\",\n  \"paginacion\":{\"pagina\":1, \"registrosPorPagina\":100}\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/qery/consultar_cotizacion"
+                        },
+                        "id": "54d98526-205e-4ee9-936d-dfaa5d9cd1e3",
+                        "name": "25.- Consulta Cotizaciones",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{ \n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"fechaCotizacionDesde\":\"2020-03-01 00:00:00\",\n  \"fechaCotizacionHasta\":\"2020-03-15 00:00:00\",\n  \"paginacion\":{\"pagina\":1, \"registrosPorPagina\":100}\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/qery/consultar_cotizacion/export"
+                        },
+                        "id": "bc8f6ba6-a1fe-4b24-921b-5f47c0336e0c",
+                        "name": "25.01.- Consulta Cotizaciones",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\":\"7398856\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/cancelar_cotizacion"
+                        },
+                        "id": "8bb7d4ce-28b7-45e8-828f-7b182221499e",
+                        "name": "26.- Cancelar Cotizaciones",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{ \n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\":\"7398809\",\n  \"asegurado\":{\n    \"tipoPersona\":\"MORAL\",\n    \"razonSocial\":\"TRANSPORTES MORENO SA DE CV\",\n    \"rfc\":\"PQR910101XYZ\",\n    \"calle\":\"LIRIOS\",\n    \"numero\":\"G36\",\n    \"colonia\":\"CIUDAD JARDIN\",\n    \"lugarNacimiento\":\"NICARAGUA\",\n    \"giro\":\"COMERCIO\",\n    \"telefono\":\"81534994\"\n  },\n  \"vehiculoEmision\":{\n    \"numPlaca\":\"NBL4572\",\n    \"numSerie\":\"WDDLJ9BB1XA065426\",\n    \"numMotor\":\"WDDLJ9BB1X\",\n    \"nciRepuve\":\"WDDLJ9BB1X\",\n    \"transmision\":\"STD\"\n  },\n  \"emision\":{\n    \"numEmpleadoPromociona\":\"9023\",\n    \"sucursal\":\"00049\"\n  }\n}\n"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/actualizar_cotizacion"
+                        },
+                        "id": "ce8f9efb-1fca-4834-82ee-b679fd0a0501",
+                        "name": "27.- Actualizacion Cotizacion",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumSerie\":\"1FVAC3BS7CHBJ4044\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/chck/validar_serie_solicitud"
+                        },
+                        "id": "b8c56e03-b655-4fe2-9e85-d18f9541bc76",
+                        "name": "28.- Validacion Serie Solicitud",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\":\"7398861\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/prnt/imprimir_cotizacion"
+                        },
+                        "id": "a41f6734-1dfa-4794-9a6a-d7bf02c9cae3",
+                        "name": "29.- Imprimir Cotizacion SAE",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"tipoPersona\": \"FÍSICA\",\n  \"nombreAsegurado\": \"GARCIA\",\n  \"paginacion\":{\n    \t\"pagina\":1, \n    \t\"registrosPorPagina\":100\n  }\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/qery/consultar_cliente"
+                        },
+                        "id": "7cbd3926-ec29-4e9f-9afa-ae4b493c8316",
+                        "name": "30.- Consulta Clientes",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{ \n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumCotizacion\":\"7398801\",\n  \"tipoPersona\":\"FÍSICA\",\n  \"nombre\":\"ANTONIO PEDRO\",\n  \"apellidoPaterno\":\"GARCIA\",\n  \"apellidoMaterno\":\"LOPEZ\",\n  \"rfc\":\"GALA7901014X8\",\n  \"calle\":\"AQUILES SERDAN\",\n  \"numero\":\"464\",\n  \"colonia\":\"PRIMAVERA\",  \n  \"lugarNacimiento\":\"NICARAGUA\"\n}\n"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/actualizar_cliente"
+                        },
+                        "id": "5bbc7c65-6f78-4d89-a420-e97f7fd5bf57",
+                        "name": "31.- Actualizacion Datos Clientes",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"fechaInicio\": \"2020-01-01 00:00:00\",\n  \"fechaFin\": \"2020-03-23 00:00:00\",\n  \"paginacion\":{\n    \"registrosPorPagina\":100,\n    \"pagina\":1\n  }\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/qery/buscar_solicitud_candidata"
+                        },
+                        "id": "cf9232cf-9265-4d67-a627-79659cc8b55c",
+                        "name": "32.- Busqueda Solicitudes Candidatas",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"fechaInicio\":\"2020-03-01 00:00:00\",\n  \"fechaFin\":\"2020-03-20 00:00:00\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/registrar_lote_conciliacion"
+                        },
+                        "id": "ff80a218-46e7-43d5-8189-9e05ec5bf31d",
+                        "name": "33.- Registra Lote Conciliacion",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"fechaInicio\":\"2020-03-01 00:00:00\",\n  \"fechaFin\":\"2020-03-20 00:00:00\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/registrar_lote_conciliacion/export"
+                        },
+                        "id": "5ff1ba09-673c-4a12-8da9-e03020d32702",
+                        "name": "33.01.- Registra Lote Conciliacion Export",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"idLote\": \"2\",\n  \"nombreArchivo\": \"AP19032020.txt\",\n  \"contenido\":\"MDAwMjAwNTJLTkFGRTEyMTY2NTM1NTQxNjAwMDAyNzU0ODg3MTg1NjEyMDAxMDAwMDAwMDAwMDEyMDAwMDIwMjAwMzExMjAyMDAzMTEyMDIxMDMxMTAwMDAwMDAwMDAwODEwMTAwNDkNCjAwMDIwMDg4MTlYRkExRjU3QUUwNjMzMDEwMDAwMDc4NzQ0Nzk4NTYxMjAwODAwMDAwMDAwMDAxMjAwMDAyMDIwMDMxMTIwMjAwMzExMjAyMTAzMTEwMDAwMDAwMDAwMDgxMDIwMDQ5DQowMDAyMDA4ODFHTkVDMTNaMDNSMjIxODU5MDAwMDEwMzI0OTkyODU2MTIwMDkwMDAwMDAwMDAwMjQwMDAwMjAyMDAzMTEyMDIwMDMxMTIwMjIwMzExMDAwMDAwMDAwMDA4MTAzMDA0OQ0KMDAwMjAwODhLTkFETjRBMzlINjA2NDA0NTAwMDAxMDMyNDk5Mjg1NjEyMjQxMDAwMDAwMDAwMDM2MDAwMDIwMjAwMzExMjAyMDAzMTEyMDIzMDMxMTAwMDAwMDAwMDAwODEwNDAwNDkNCjAwMDIwMDg4M0hHUlU1ODU0S00wMTI5NTQwMDAwMDEyNTA5MjM4NTYxMjI0MjAwMDAwMDAwMDAzNjAwMDAyMDIwMDMxMTIwMjAwMzExMjAyMzAzMTEwMDAwMDAwMDAwMDgxMDUwMDQ5\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/prnt/cargar_altas"
+                        },
+                        "id": "41a6ea2c-50f1-408e-86f2-1f0843a6840b",
+                        "name": "34.- Carga Altas",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n \"usuarioCliente\":\"9023\",\n \"nombreArchivo\":\"EdoCta0161150002_13032020.xls\",\n  \"clienteEstrategico\":\"sae\",\n  \"idLote\":\"225\",\n \"contenido\":\"0M8R4KGxGuEAAAAAAAAAAAAAAAAAAAAAPgADAP7/CQAGAAAAAAAAAAAAAAABAAAANQAAAAAAAAAAEAAA/v///wAAAAD+////AAAAADQAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8JCBAAAAYFAGYyzQfJgAEABgYAAOEAAgCwBMEAAgAAAOIAAABcAHAABgAAR0VURUNIICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEIAAgCwBGEBAgAAAMABAAA9AQIAAQCcAAIAEQAZAAIAAAASAAIAAAATAAIAAACvAQIAAAC8AQIAAAA9ABIA8ABLAJNOOx84AAAAAAABAFgCQAACAAAAjQACAAAAIgACAAAADgACAAEAtwECAAAA2gACAAAAMQAeANwAAAAIAJABAAAAAgAABwFDAGEAbABpAGIAcgBpADEAHgDcAAAACACQAQAAAAIAAAcBQwBhAGwAaQBiAHIAaQAxAB4A3AAAAAgAkAEAAAACAAAHAUMAYQBsAGkAYgByAGkAMQAeANwAAAAIAJABAAAAAgAA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QwDBvnfpfQgtAH0IAAAAAAAAAAAAAAAAAAAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0ILQB9CAAAAAAAAAAAAAAAAAEAAAACAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAJ9CC0AfQgAAAAAAAAAAAAAAAACAAAAAgANABQAAwAAAAEAAABfLTtfLSogIg4ABQACfQgtAH0IAAAAAAAAAAAAAAAAAwAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0ILQB9CAAAAAAAAAAAAAAAAAQAAAACAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAJ9CC0AfQgAAAAAAAAAAAAAAAAFAAAAAgANABQAAwAAAAEAAABfLTtfLSogIg4ABQACfQgtAH0IAAAAAAAAAAAAAAAABgAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0ILQB9CAAAAAAAAAAAAAAAAAcAAAACAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAJ9CC0AfQgAAAAAAAAAAAAAAAAIAAAAAgANABQAAwAAAAEAAABfLTtfLSogIg4ABQACfQgtAH0IAAAAAAAAAAAAAAAACQAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0ILQB9CAAAAAAAAAAAAAAAAAoAAAACAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAJ9CC0AfQgAAAAAAAAAAAAAAAALAAAAAgANABQAAwAAAAEAAABfLTtfLSogIg4ABQACfQgtAH0IAAAAAAAAAAAAAAAADAAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0ILQB9CAAAAAAAAAAAAAAAAA0AAAACAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAJ9CC0AfQgAAAAAAAAAAAAAAAAOAAAAAgANABQAAwAAAAEAAABfLTtfLSogIg4ABQACfQgtAH0IAAAAAAAAAAAAAAAADwAAAAIADQAUAAMAAAABAAAAXy07Xy0qICIOAAUAAn0IQQB9CAAAAAAAAAAAAAAAABAAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZgQAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABEAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZgUAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABIAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZgYAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABMAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZgcAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABQAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZggAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABUAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwBlZgkAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABYAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAQAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABcAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAUAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABgAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAYAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABkAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAcAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABoAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAgAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABsAAAADAA0AFAADAAAAAQAAAF8tO18tKiAiDgAFAAIEABQAAwDMTAkAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAABwAAAADAA0AFAADAAAAAAAAAF8tO18tKiAiDgAFAAIEABQAAwAyMwQAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAAB0AAAADAA0AFAADAAAAAAAAAF8tO18tKiAiDgAFAAIEABQAAwAyMwUAAAAtQF8tICAgIH0IQQB9CAAAAAAAAAAAAAAAAB4AAAADAA0AFAADAAAAAAAAAF8tO18tKiAi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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgAAADIAAAAEAAAAAAAAAAAAAAAfAAAAticJAPkeAgBcSwMAe18BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQwBhAHIAdABhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKEAIgABAGQAAQABAAEAAgBYAlgCAAAAAAAA4D8AAAAAAADgPwEAnAgmAJwIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAVQACAAoAfQAMAAAAAAAACj4ABgAAAH0ADAABAAEAkhA+AAYAAAB9AAwAAgACAEkJPgAGAAAAfQAMAAMAAwBJFz4ABgAAAH0ADAAEAAQAkgo+AAYAAAB9AAwABQAFAEkHPgAGAAAAfQAMAAYABgDbCj4ABgAAAH0ADAAHAAgASQw+AAYAAAB9AAwACQAJAJIKPgAGAAAAfQAMAAoACgBtUz4ABgAAAH0ADAALAAABbQs+AAAAAAAAAg4AAAAAAAYAAAAAAAwAAAAIAhAAAAAAAAwA/wAAAAAAgAFBAAgCEAABAAAADAD/AAAAAAAAAQ8ACAIQAAIAAAAMAP8AAAAAAAABDwAIAhAAAwAAAAwA/wAAAAAAAAEPAAgCEAAEAAAADAD/AAAAAAAAAQ8ACAIQAAUAAAAMAP8AAAAAAAABDwD9AAoAAAAAAEIAAAAAAP0ACgAAAAEAQgABAAAA/QAKAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v8AAAYCAgAAAAAAAAAAAAAAAAAAAAAAAQAAAALVzdWcLhsQk5cIACss+a4wAAAA3AAAAAkAAAABAAAAUAAAAA8AAABYAAAAFwAAAGQAAAALAAAAbAAAABAAAAB0AAAAEwAAAHwAAAAWAAAAhAAAAA0AAACMAAAADAAAALAAAAACAAAA5AQAAB4AAAAEAAAAAAAAAAMAAAAAAA4ACwAAAAAAAAALAAAAAAAAAAsAAAAAAAAACwAAAAAAAAAeEAAAAQAAABgAAABDdGEgMDE2MTE1MDAwMiAyNi0xMS0xOQAMEAAAAgAAAB4AAAARAAAASG9qYXMgZGUgY+FsY3VsbwADAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAABMAAAAUAAAAFQAAABYAAAAXAAAAGAAAABkAAAAaAAAAGwAAABwAAAAdAAAAHgAAAB8AAAAgAAAAIQAAACIAAAAjAAAA/v///yUAAAAmAAAAJwAAACgAAAApAAAAKgAAACsAAAD+////LQAAAC4AAAAvAAAAMAAAADEAAAAyAAAAMwAAAP7////9/////v//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////UgBvAG8AdAAgAEUAbgB0AHIAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYABQH//////////wIAAAAgCAIAAAAAAMAAAAAAAABGAAAAAAAAAAAAAAAAUIsh1Gz51QH+////AAAAAAAAAABXAG8AcgBrAGIAbwBvAGsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgACAf///////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABARwAAAAAAAAUAUwB1AG0AbQBhAHIAeQBJAG4AZgBvAHIAbQBhAHQAaQBvAG4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAIBAQAAAAMAAAD/////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAQAAAAAAAABQBEAG8AYwB1AG0AZQBuAHQAUwB1AG0AbQBhAHIAeQBJAG4AZgBvAHIAbQBhAHQAaQBvAG4AAAAAAAAAAAAAADgAAgH///////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAAABAAAAAAAAA=\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/cargar_estado_cuenta"
+                        },
+                        "id": "328e1b70-82fa-4ea7-bd53-dd6cab06461a",
+                        "name": "35.- Carga Estado de Cuenta",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"idLote\":\"3\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/func/liberar_poliza"
+                        },
+                        "id": "97ca2c78-9c0a-4414-931e-c13b2ec78435",
+                        "name": "36.- Liberacion Polizas",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNumSerie\":\"19XFA1F57AE063301\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/auto/chck/validar_serie_central"
+                        },
+                        "id": "24596e09-21b6-4407-8e34-cfd5a1710e3d",
+                        "name": "37.- Valida serie central",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/tipo_persona"
+                        },
+                        "id": "75a66b34-7ab7-41ea-b15e-119da272a45c",
+                        "name": "38.- Tipo persona",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreAgencia\": \"AGENCIA DE ANGEL\",\n  \"estado\": \"NUEVO LEÓN\",\n  \"autoNombreMarca\": \"SUZUKI\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/agencia/agregar"
+                        },
+                        "id": "4f90aa1a-563a-4104-9459-688e810d918c",
+                        "name": "39.- Agencias Agregar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreAgencia\": \"AGENCIA DEANGEL\",\n  \"estado\": \"NUEVO LEÓN\",\n  \"autoNombreMarca\": \"SUZUKI\",\n  \"clave\": \"36934\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/agencia/modificar"
+                        },
+                        "id": "5e28fb8a-87df-43e0-a5f4-d07643ad8343",
+                        "name": "40.- Agencias Modificar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"clave\": \"36926\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/agencia/eliminar"
+                        },
+                        "id": "9ae0995a-b06d-4379-b97b-d3c849db00fa",
+                        "name": "41.- Agencias Eliminar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreAseguradora\":\"aseguradora de prueba3\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/aseguradora/agregar"
+                        },
+                        "id": "55a0c5b3-d8f4-4781-aeb0-64b62ecbc604",
+                        "name": "42.- Aseguradora Agregar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"autoNombreAseguradora\": \"ASEGURADORA\",\n  \"clave\": \"65\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/aseguradora/modificar"
+                        },
+                        "id": "1aa0e770-7d30-434f-9ce8-df98578b5390",
+                        "name": "43.- Aseguradora Modificar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"clave\": \"65\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/func/aseguradora/eliminar"
+                        },
+                        "id": "7168e27f-826c-43ba-b0df-a6e57b390366",
+                        "name": "44.- Aseguradora Eliminar",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"Se utiliza Internamente en SAE\"\n}"
+                        },
+                        "uri": {
+                            "scheme": {
+                                "secure": true,
+                                "name": "https",
+                                "version": "V11"
+                            }
+                        },
+                        "id": "aec832de-94a1-4a3a-bdf1-c09fde1ce1a8",
+                        "name": "45.- Poliza Dependiente",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"producto\": \"AUTOESTRENE TRADICIONAL\",\n  \"nombreCategoria\": \"AUTOMÓVILES RESIDENTES\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/localizar"
+                        },
+                        "id": "b043182c-2cab-47bf-8b36-3af344b4dd5f",
+                        "name": "46.- Localizacion",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "entity": {
+                        "type": "Request",
+                        "method": {
+                            "requestBody": true,
+                            "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                            "name": "POST"
+                        },
+                        "body": {
+                            "formBody": {
+                                "overrideContentType": true,
+                                "encoding": "application/x-www-form-urlencoded",
+                                "items": []
+                            },
+                            "bodyType": "Text",
+                            "textBody": "{\n  \"usuarioCliente\":\"9023\",\n  \"clienteEstrategico\":\"sae\",\n  \"estado\": \"NUEVO LEÓN\",\n  \"municipio\": \"MONTERREY\",\n  \"codigoPostal\": \"64000\"\n}"
+                        },
+                        "uri": {
+                            "query": {
+                                "delimiter": "&",
+                                "items": []
+                            },
+                            "scheme": {
+                                "name": "http",
+                                "version": "V11"
+                            },
+                            "host": "15.192.41.114:9201",
+                            "path": "/sae/webapi/catg/colonia"
+                        },
+                        "id": "a1af89fe-7ea1-49e2-976c-7f46ea549619",
+                        "name": "47.- Catalogo Colonias",
+                        "headers": [
+                            {
+                                "enabled": true,
+                                "name": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
